@@ -33,10 +33,10 @@
                                      <input type="hidden" name="sale_price" value="{{$product->sale_price}}">
                                      <input type="hidden" name="quantity" value="1">
                                      <input type="hidden" name="image" value="{{$product->image}}">
-                                     <input type="submit"  value="Add to Cart" class = "btn>
+                                     <input type="submit"  value="Add to Cart" class = "btn">
                                      
                                 </form>
-                                <a class="btn" href="#">Buy Now</a>
+                                
                             </div>
                         </div>
                     </div>
