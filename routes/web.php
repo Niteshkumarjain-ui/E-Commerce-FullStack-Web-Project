@@ -39,3 +39,16 @@ Route::post('/add_to_cart',[CartController::Class,'add_to_cart'])->name('add_to_
 Route::get('/add_to_cart',function(){
     return redirect('/');
 });
+
+
+Route::post('/remove_from_cart',[CartController::Class,'remove_from_cart'])->name('remove_from_cart');
+
+Route::get('/remove_from_cart',function(){
+    return redirect('/');
+});
+
+Route::post('/edit_product_quantity',[CartController::Class,'edit_product_quantity'])->name('edit_product_quantity');
+
+Route::get('/edit_product_quantity',function(){
+    return redirect('/');
+});

@@ -95,5 +95,45 @@ class CartController extends Controller
 
        }
 
+
+       function remove_from_cart(Request $request){
+            if($request->session()->has('cart')){
+                  $id = $request->input('id');
+
+                  $cart = $request->session()->get('cart');
+
+                  unset($cart[$id]);
+
+                  $request->session()->put('cart',$cart);
+                  $this->calculateTotalCart($request);
+            }
+            return view('cart');
+       }
+       function edit_product_quantity(Request $request){
+             if($request->session()->has('cart')){
+                 $product_id = $request->input('id');
+                 $product_quantity = $request->input('quantity');
+
+                 if($request->has('decrease_product_quantity_btn')){
+                     $product_quantity= $product_quantity-1;
+
+                 }else if($request->has('increase_product_quantity_btn')){
+                        $product_quantity =$product_quantity+1;
+                 }else{
+                       
+                 }
+                   if($product_quantity<=0){
+                         $this->remove_from_cart($request);
+                   }
+                 $cart = $request->session()->get('cart');
+                 if(array_key_exists($product_id,$cart)){
+                      $cart[$product_id]['quantity'] = $product_quantity;
+                      $request->session()->put('cart', $cart);
+                      $this->calculateTotalCart($request);
+                 }
+             }
+             return view('cart');
+       }
+
        
 }
