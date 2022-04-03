@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +56,9 @@ Route::get('/edit_product_quantity',function(){
 
 
 Route::get('/checkout',[CartController::class,'checkout'])->name('checkout');
+
+
+Route::post('/place_order',[CartController::class,'place_order'])->name('place_order');
+
+
+Route::get('/payment',[PaymentController::class,'payment'])->name('payment');
