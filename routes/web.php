@@ -52,3 +52,6 @@ Route::post('/edit_product_quantity',[CartController::Class,'edit_product_quanti
 Route::get('/edit_product_quantity',function(){
     return redirect('/');
 });
+
+
+Route::get('/checkout',[CartController::class,'checkout'])->name('checkout');
