@@ -32,11 +32,11 @@
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="#header">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                        <li><a href="">Cart</a></li>
+                        <li class="menu-active"><a href="{{route('home')}}">Home</a></li>
+                        <li><a href="{{route('products')}}">Products</a></li>
+                        <li><a href="{{route('about')}}">About</a></li>
+                        <li><a href="{{route('review')}}">Reviews</a></li>
+                        <li><a href="{{route('cart')}}">Cart</a></li>
                     
                     </ul>
                 </nav>

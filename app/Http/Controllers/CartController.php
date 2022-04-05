@@ -152,7 +152,7 @@ class CartController extends Controller
 
                  $cost = $request->session()->get('total');
                  $status = "not paid";
-                 $date = date('Y-m-d');
+                 $date = date('Y-m-d h:i:s');
 
                  $cart = $request->session()->get('cart');
 

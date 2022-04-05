@@ -13,7 +13,7 @@
                                 <li><span class="fa-li"><i class="far fa-arrow-alt-circle-right"></i></span>Read & reply to messages</li>
                                 <li><span class="fa-li"><i class="far fa-arrow-alt-circle-right"></i></span>Compatible with all devices</li>
                             </ul>
-                            <a class="btn" href="#">Buy Now</a>
+                            <a class="btn" href="{{route('products')}}">Buy Now</a>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -192,7 +192,7 @@
                     @endforeach
                 </div>
 
-                <div class="mt-5 text-center"><a href="" class="btn btn-primary">Buy Now</a></div>
+                <div class="mt-5 text-center"><a href="{{route('products')}}" class="btn btn-primary">Buy Now</a></div>
 
             </div>
         </div>
@@ -366,15 +366,15 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra at massa sit amet ultricies
                             </p>
                             <h3><i class="fa fa-map-marker"></i>123 Trade Tower, Los Angeles, CA, USA</h3>
-                            <h3><i class="fa fa-envelope"></i>email@example.com</h3>
-                            <h3><i class="fa fa-phone"></i>+123-456-7890</h3>
+                            <h3><i class="fa fa-envelope"></i>niteshjain8769@gmail.com</h3>
+                            <h3><i class="fa fa-phone"></i>+91 8112206622</h3>
                             <a class="btn" href="#">Contact Us</a>
                             <div class="social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-facebook"></i></a>
-                                <a href=""><i class="fab fa-linkedin"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/niteshkumar.jain.16"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/nitesh-kumar-jain-11906608/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/nitesh__jain26/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/UCWc_zqo9zoUz6AtF9o6yxtA"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
